@@ -76,7 +76,7 @@ public class envioCorreo {
 
             // Se envia el correo.
             Transport t = session.getTransport("smtp");
-            t.connect("informatica@mhochschild.cl", "inf01200");
+            t.connect("informatica@mhochschild.cl", "****");
             t.sendMessage(message, message.getAllRecipients());
             t.close();
             JOptionPane.showMessageDialog(null,"El archivo fue enviado al correo");
